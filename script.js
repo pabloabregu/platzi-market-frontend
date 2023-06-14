@@ -4,7 +4,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    var url = "http://localhost:8090/platzi-market/api/auth/authenticate";
+    var url = "https://platzi-market-production-bede.up.railway.app/platzi-market/api/auth/authenticate";
 
     var data = {
         username: username,
@@ -33,7 +33,7 @@ document.getElementById("login-form").addEventListener("submit", function(event)
         var accessToken = data.jwt;
         console.log("Data = " + accessToken);
         //alert("Inicio de sesión exitoso"); // Muestra un mensaje de éxito
-        fetch('http://localhost:8090/platzi-market/api/products/all', {
+        fetch('https://platzi-market-production-bede.up.railway.app/platzi-market/api/products/all', {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + accessToken
