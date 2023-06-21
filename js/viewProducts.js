@@ -1,7 +1,7 @@
 function showProducts() {
   var accessToken = sessionStorage.getItem("token");
 
-  fetch("https://platzi-market-production-e33b.up.railway.app/platzi-market/api/products/all", {
+  fetch("http://localhost:8090/platzi-market/api/products/all", {
     method: "GET",
     headers: {
       Authorization: "Bearer " + accessToken,
