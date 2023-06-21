@@ -29,7 +29,7 @@ function login() {
         console.log(accessToken);
         sessionStorage.setItem('token', accessToken);
 
-        window.location.href = "view-products.html";
+        window.location.href = "https://platzi-market-production-e33b.up.railway.app/view-products.html";
     })
     .catch(function(error) {
         console.log(error);
