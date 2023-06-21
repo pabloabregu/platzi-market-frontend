@@ -12,7 +12,8 @@ function login() {
     fetch(url, {
         method: "POST",
         headers: {
-            "Content-Type": "application/json"
+            "Content-Type": "application/json",
+            "Origin": "https://platzi-market-production-e33b.up.railway.app"
         },
         body: JSON.stringify(data)
     })
