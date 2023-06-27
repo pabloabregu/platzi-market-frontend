@@ -1,7 +1,9 @@
 function showProducts() {
   var accessToken = sessionStorage.getItem("token");
 
-  var url = "http://localhost:8090/platzi-market/api/products/all";
+  //var url = "http://localhost:8090/platzi-market/api/products/all";
+  var url = "https://platzi-market-production-5706.up.railway.app/platzi-market/api/products/all";
+
   fetch(url, {
     method: "GET",
     headers: {

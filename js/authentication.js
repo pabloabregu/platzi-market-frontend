@@ -2,7 +2,8 @@ function login(){
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
 
-    var url = "http://localhost:8090/platzi-market/api/auth/authenticate";
+    //var url = "http://localhost:8090/platzi-market/api/auth/authenticate";
+    var url = "https://platzi-market-production-5706.up.railway.app/platzi-market/api/auth/authenticate/";
 
     var data = {
         "username": username,
