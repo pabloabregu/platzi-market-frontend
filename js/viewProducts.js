@@ -1,7 +1,8 @@
 function showProducts() {
   var accessToken = sessionStorage.getItem("token");
 
-  fetch("http://localhost:8090/platzi-market/api/products/all", {
+  var url = "http://localhost:8090/platzi-market/api/products/all";
+  fetch(url, {
     method: "GET",
     headers: {
       Authorization: "Bearer " + accessToken,
@@ -15,11 +16,6 @@ function showProducts() {
       }
     })
     .then(function (data) {
-        console.log(data);
-      /*
-      var productList = document.getElementById("product-list");
-      productList.innerHTML = "";
-      */
       var productGrid = document.getElementById("products-grid");
 
       data.forEach(function (product) {
