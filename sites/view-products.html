@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>Welcome</title>
+</head>
+<body onload="showProducts()">
+    <!-- header.css -->
+    <header class="main-header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="Logo">
+        </div>
+    </header>
+
+    <!-- sidebar & products-->
+    <section>
+        <nav class="sidebar">
+            <ul class="categories-list">
+                <li><a href="#">Frutas y verduras</a></li>
+                <li><a href="#">Pastelería</a></li>
+                <li><a href="#">Carnes y pescados</a></li>
+                <li><a href="#">Lácteos y huevos</a></li>
+                <li><a href="#">Bebidas</a></li>
+                <li><a href="#">Licores</a></li>
+                <li><a href="#">Cuidado personal</a></li>
+                <li><a href="#">Despensa</a></li>
+            </ul>
+        </nav>
+
+        <div class="main-container">
+            <div id="products-grid"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Pablo Abregu</p>
+    </footer>
+    <script src="../js/viewProducts.js"></script>
+</body>
+</html>
