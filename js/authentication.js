@@ -30,7 +30,8 @@ function login(){
         var accessToken = data.jwt;
         sessionStorage.setItem('token', accessToken);
 
-        window.location.href = "../sites/view-products.html";
+        var baseUrl = window.location.origin;
+        window.location.href = baseUrl + "/sites/view-products.html";
     })
     .catch(function(error) {
         console.log(error);
